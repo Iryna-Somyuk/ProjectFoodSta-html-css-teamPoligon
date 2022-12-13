@@ -1,0 +1,107 @@
+//Buttons style
+
+.btn--animation:hover,
+.btn--animation:focus
+ {
+
+    animation-play-state:running;
+    // animation-name: turning;
+    animation-name: skale3D;
+    animation-duration: 750ms;
+    animation-timing-function: linear;
+    animation-delay: 250ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    }
+    
+
+.btn__list {
+    @extend%list;
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .btn--animation:hover,
+// .btn--animation:focus {
+//     background-color: $color-green-accent;
+//     box-shadow: 0 0 5px $color-green-accent,
+//         0 0 25px $color-green-accent,
+//         0 0 50px $color-green-accent,
+//         0 0 100px $color-green-accent;
+
+//     -webkit-box-reflect: below 5px linear-gradient(transparent, $color-white);
+// }
+
+.btn__item {
+    position: absolute;
+    display: block;
+    border-radius: 30px;
+}
+
+.btn__item:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, yellow);
+    animation: btn-anim1 2s linear infinite;
+
+    @include media-query(tablet) {
+        height: 5px;
+    }
+}
+
+.btn__item:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, yellow);
+    animation: btn-anim2 2s linear infinite;
+    animation-delay: 0.5s;
+    
+    @include media-query(tablet) {
+            width: 5px;
+        }
+    
+}
+
+.btn__item:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, yellow);
+    animation: btn-anim3 2s linear infinite;
+    animation-delay: 1s;
+
+    @include media-query(tablet) {
+            height: 5px;
+        }
+}
+
+.btn__item:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, yellow);
+    animation: btn-anim4 2s linear infinite;
+    animation-delay: 1.5s;
+
+    @include media-query(tablet) {
+            width: 5px;
+        }
+}
+
+
+
+.btn--animation:focus .btn__item,
+.btn--animation:hover .btn__item {
+    animation: none;
+}

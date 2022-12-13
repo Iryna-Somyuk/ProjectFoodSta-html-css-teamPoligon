@@ -1,0 +1,23 @@
+@import './base/common';
+
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/basic';
+@import './base/placeholders';
+@import './base/section';
+@import './base/container';
+
+@import './components/buttons';
+@import './components/animations';
+@import './components/modal.scss';
+
+
+@import './layouts/header';
+@import './layouts/mobile-menu';
+@import './layouts/hero';
+@import './layouts/offerings';
+@import './layouts/favorites';
+@import './layouts/customers';
+@import './layouts/subscribe';
+@import './layouts/footer';

@@ -1,0 +1,29 @@
+body {
+    font-family: $font;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: $color-black-second;
+
+    &.modal-open {
+            overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

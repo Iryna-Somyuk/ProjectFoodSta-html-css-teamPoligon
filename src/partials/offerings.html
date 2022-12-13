@@ -1,0 +1,160 @@
+<section class="section offerings" id="offerings">
+  <div class="offerings__content container">
+    <div class="offerings__img-container offerings__img-container--bottom">
+      <picture class="offerings__picture-container">
+        <source
+          media="(min-width:1280px)"
+          type="image/webp"
+          srcset="
+            ./images/offerings/img-1@1x_lg-apple.webp 1x,
+            ./images/offerings/img-1@2x_lg-apple.webp 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          type="image/webp"
+          srcset="
+            ./images/offerings/img-1@1x_md.webp 1x,
+            ./images/offerings/img-1@2x_md.webp 2x
+          "
+        />
+        <source
+          media="(min-width:320px)"
+          type="image/webp"
+          srcset="
+            ./images/offerings/img-1@1x_sm.webp 1x,
+            ./images/offerings/img-1@2x_sm.webp 2x
+          "
+        />
+        <source
+          media="(min-width:1280px)"
+          type="image/png"
+          srcset="
+            ./images/offerings/img-1@1x_lg-apple.png 1x,
+            ./images/offerings/img-1@2x_lg-apple.png 2x
+          "
+        />
+        <source
+          media="(min-width:768px)"
+          type="image/png"
+          srcset="
+            ./images/offerings/img-1@1x_md.png 1x,
+            ./images/offerings/img-1@2x_md.png 2x
+          "
+        />
+        <source
+          media="(min-width:320px)"
+          type="image/png"
+          srcset="
+            ./images/offerings/img-1@1x_sm.png 1x,
+            ./images/offerings/img-1@2x_sm.png 2x
+          "
+        />
+
+        <img
+          src="./images/offerings/img-1@1x_sm.png"
+          loading="lazy"
+          alt="apple"
+          class="offerings__img"
+        />
+      </picture>
+
+      <picture class="offerings__picture-container">
+        <source
+          media="(max-width:1199.98px)"
+          type="image/webp"
+          srcset="
+            ./images/offerings/img-2@1x_md.webp 1x,
+            ./images/offerings/img-2@2x_md.webp 2x
+          "
+        />
+        <source
+          media="(max-width:1199.98px)"
+          type="image/png"
+          srcset="
+            ./images/offerings/img-2@1x_md.png 1x,
+            ./images/offerings/img-2@2x_md.png 2x
+          "
+        />
+        <img
+          src="./images/offerings/img-2@1x_md.png"
+          loading="lazy"
+          alt="apple"
+          class="offerings__img offerings__img--middle"
+        />
+      </picture>
+      <picture class="offerings__picture-container">
+        <source
+          media="(max-width:1199.98px)"
+          type="image/webp"
+          srcset="
+            ./images/offerings/img-3@1x_md.webp 1x,
+            ./images/offerings/img-3@2x_md.webp 2x
+          "
+        />
+
+        <source
+          media="(max-width:1199.98px)"
+          type="image/png"
+          srcset="
+            ./images/offerings/img-3@1x_md.png 1x,
+            ./images/offerings/img-3@2x_md.png 2x
+          "
+        />
+        <img
+          src="./images/offerings/img-3@1x_md.png"
+          loading="lazy"
+          alt="apple"
+          class="offerings__img offerings__img--small"
+        />
+      </picture>
+    </div>
+
+    <div class="offerings__wrapper">
+      <div class="offerings__group">
+        <h2 class="offerings__title section__title">
+          What’s Special About Our Offerings
+        </h2>
+        <p class="offerings__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+      </div>
+
+      <ul class="offerings__list">
+        <li class="offerings__item offerings__delivery">
+          <h3 class="offerings__subtitle">Fastest Delivery</h3>
+          <p class="offerings__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings__item offerings__order">
+          <h3 class="offerings__subtitle">Easy To Order</h3>
+          <p class="offerings__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+
+      <div class="offerings__options">
+        <button
+          class="offerings__btn btn--animation"
+          type="button"
+          aria-label="Order Now"
+          data-modal-open2
+        >
+          Order Now
+        </button>
+        <a class="offerings__link" href="./index.html"
+          >Read More
+          <svg class="offerings__icon-link" width="9" height="5">
+            <use href="./images/icon.svg#rightArrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
